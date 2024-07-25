@@ -144,11 +144,6 @@ body{
     justify-content: center;
 }
 
-#navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 #navbar li {
     list-style: none;
@@ -224,6 +219,7 @@ body{
 .Welcome-text button:hover{
   border-color: white;
   margin-left: 10px;
+  border-radius: 0px;
 }
 
 .Container{
@@ -236,8 +232,25 @@ body{
   height: 1px;
   background-color: #f1f14a;
   margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   margin-left: 30px;
   margin-right: 30px;
 
+}
+
+.data-list{
+  margin: 30px 40px 30px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.data-list li{
+  list-style: none;
+  position:center;
+  color:white;
+}
+
+.data-list li i{
+  color: #f1f14a;
+  height: 9px;
 }
