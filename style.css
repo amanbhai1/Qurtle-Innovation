@@ -114,7 +114,6 @@
     font-style: italic;
   }
   
-
 body{
     background-image: url(/Assets/hero-bg.jpg);
     background-size: 100%;
@@ -393,9 +392,9 @@ body{
 @media (max-width:477px){
 
   body{
-    background-attachment:fixed;
-    background-position: center;
-    background-size:400%;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
   }
   .Welcome-text h1{
     font-size: 35px;
@@ -410,12 +409,13 @@ body{
   }
 
   .our-mission{
-    width: 120%;
+    width: 100%;
   }
 
   .our-mission h1{
     margin-left: 20px;
     width: 100%;
+    font-size: 30px;
   }
 
   .our-mission-data p{
