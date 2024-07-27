@@ -394,7 +394,7 @@ body{
   body{
     background-attachment: fixed;
     background-position: top;
-    background-size: cover;
+    background-size: 400%;
   }
   .Welcome-text h1{
     font-size: 35px;
@@ -428,5 +428,11 @@ body{
 
   .our-mission h1.active1{
     width: 50%;
+  }
+
+  .Welcome-text button{
+    font-size: 15px;
+    margin-top: 30px;
+    
   }
 }
