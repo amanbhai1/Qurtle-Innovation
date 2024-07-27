@@ -19,3 +19,19 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'services.html';
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('contact');
+    button.addEventListener('click', function() {
+        window.location.href = 'contact.html';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.location.pathname.endsWith('about.html')) {
+        document.body.style.backgroundImage = "url('/Assets/interior-header-image.jpg')";
+        document.body.style.backgroundSize ="180%";
+    }
+});
+
