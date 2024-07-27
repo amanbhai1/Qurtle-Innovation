@@ -35,3 +35,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.location.pathname.endsWith('about.html')) {
+        document.body.style.backgroundImage = "url('/Assets/interior-header-image.jpg')";
+        
+        if (window.innerWidth <= 855) {
+            document.body.style.backgroundSize = 'contain';
+        }
+        if (window.innerWidth <= 560) {
+            document.body.style.backgroundSize = '600%';
+        }
+    }
+});
+
