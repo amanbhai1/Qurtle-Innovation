@@ -58,35 +58,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     if (window.location.pathname.endsWith('services.html')) {
-        var missionElements = document.querySelectorAll('.our-mission');
         var missionElements2 = document.querySelectorAll('.our-mission-data ul li');
         var missionElements3 = document.querySelectorAll('.our-mission h1');
-        missionElements.forEach(function(element) {
-            element.style.fontSize = '9px'; 
-            if (window.innerWidth <= 855) {
-                element.style.fontSize = '9px';
-            }
-            if (window.innerWidth <= 560) {
-                element.style.fontSize = '9px';
-            }
-        });
 
         missionElements2.forEach(function(element) {
             element.style.fontSize = '15px'; 
-            element.style.margin = '10px 130px'
+            element.style.margin = '10px 130px';
             if (window.innerWidth <= 855) {
-                element.style.fontSize = '15px';
-                element.style.margin = '10px 60px'
+                element.style.fontSize = '10px';
             }
             if (window.innerWidth <= 560) {
                 element.style.fontSize = '15px';
+                element.style.margin = '10px 50px';
             }
         });
 
         missionElements3.forEach(function(element) {
-            element.style.fontSize = '15pxpx'; 
+            element.style.fontSize = '18px'; 
             if (window.innerWidth <= 855) {
-                element.style.fontSize = '15px';
+                element.style.fontSize = '12px';
             }
             if (window.innerWidth <= 560) {
                 element.style.fontSize = '15px';

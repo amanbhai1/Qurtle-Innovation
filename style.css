@@ -632,7 +632,11 @@ footer .follow i {
   }
 
   .Container1{
-    height: 1050px;
+    height: 1150px;
+  }
+
+  .Container2{
+    height: 120rem;
   }
 
   .Container3{
