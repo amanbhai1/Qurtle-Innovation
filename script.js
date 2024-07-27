@@ -12,3 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'blog.html';
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('service');
+    button.addEventListener('click', function() {
+        window.location.href = 'services.html';
+    });
+});
