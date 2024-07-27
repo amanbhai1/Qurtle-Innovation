@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         missionElements3.forEach(function(element) {
-            element.style.fontSize = '9px'; 
+            element.style.fontSize = '15pxpx'; 
             if (window.innerWidth <= 855) {
                 element.style.fontSize = '15px';
             }
