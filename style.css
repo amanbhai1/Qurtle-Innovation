@@ -246,6 +246,13 @@ body{
   padding-top: 50px;
 }
 
+.Container2{
+  width: 100%;
+  height: 150rem;
+  background-color: black;
+  padding-top: 50px;
+}
+
 .hr div{
   height: 1px;
   background-color: #f1f14a;
@@ -555,6 +562,11 @@ footer .follow i {
   .service-data p{
     font-size: 15px;
   }
+
+  .Container2{
+    height: 115rem;
+  }
+
 }
 
 
