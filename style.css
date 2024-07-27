@@ -246,6 +246,7 @@ body{
   list-style: none;
   position:center;
   color:white;
+  text-decoration: none;
 }
 
 .data-list li i{
