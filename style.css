@@ -389,7 +389,7 @@ body{
   }
 }
 
-@media (max-width:477px){
+@media (max-width:560px){
 
   body{
     background-attachment: fixed;
@@ -397,7 +397,7 @@ body{
     background-size: 600%;
   }
   .Welcome-text h1{
-    font-size: 35px;
+    font-size: 40px;
   }
 
   .Welcome-text p{
