@@ -404,8 +404,9 @@ border-radius: 0px;
 
 .service-1 h1{
   color: #ffffff;
-  font-size: 70px;
+  font-size: 50px;
   margin-bottom: 20px;
+  font-family:sans-serif, "Poopins";
   
 }
 .service-data{

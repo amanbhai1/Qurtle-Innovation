@@ -29,6 +29,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('apply');
+    button.addEventListener('click', function() {
+        window.location.href = 'https://www.linkedin.com/company/qurtleinnovations/';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
     if (window.location.pathname.endsWith('about.html')) {
         document.body.style.backgroundImage = "url('/Assets/interior-header-image.jpg')";
         document.body.style.backgroundSize ="180%";
@@ -155,4 +162,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-const inputs = document.querySelectorAll(".input");
