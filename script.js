@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.backgroundImage = "url('/Assets/interior-header-image.jpg')";
         
         if (window.innerWidth <= 855) {
-            document.body.style.backgroundSize = '310';
+            document.body.style.backgroundSize = '310%';
         }
         if (window.innerWidth <= 560) {
             document.body.style.backgroundSize = '600%';
