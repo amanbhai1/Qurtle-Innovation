@@ -39,6 +39,40 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.location.pathname.endsWith('services.html')) {
         document.body.style.backgroundImage = "url('/Assets/interior-header-image.jpg')";
         document.body.style.backgroundSize ="180%";
+        if (window.innerWidth <= 855) {
+            document.body.style.backgroundSize = '310%';
+        }
+        if (window.innerWidth <= 560) {
+            document.body.style.backgroundSize = '600%';
+        }
+        
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.location.pathname.endsWith('contact.html')) {
+        document.body.style.backgroundImage = "url('/Assets/bg2.jpg')";
+        document.body.style.backgroundSize ="100%";
+        if (window.innerWidth <= 855) {
+            document.body.style.backgroundSize = '200%';
+        }
+        if (window.innerWidth <= 560) {
+            document.body.style.backgroundSize = '110%';
+        }
+        
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.location.pathname.endsWith('industries.html')) {
+        document.body.style.backgroundImage = "url('/Assets/interior-header-image.jpg')";
+        document.body.style.backgroundSize ="180%";
+        if (window.innerWidth <= 855) {
+            document.body.style.backgroundSize = '310%';
+        }
+        if (window.innerWidth <= 560) {
+            document.body.style.backgroundSize = '600%';
+        }
         
     }
 });
@@ -120,3 +154,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+const inputs = document.querySelectorAll(".input");
