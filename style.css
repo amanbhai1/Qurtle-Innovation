@@ -233,30 +233,34 @@ body{
 
 .Container{
   width: 100%;
-  height: 700px;
+  height: auto;
   background-color: black;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .Container1{
   width: 100%;
-  height: 900px;
+  height: auto;
   background-color: black;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .Container2{
   width: 100%;
-  height: 150rem;
+  height: auto;
   background-color: black;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .Container3{
   width: 100%;
-  height: 78rem;
+  height: auto;
   background-color: black;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #btn{
@@ -292,10 +296,12 @@ body{
   align-items: center;
   justify-content: space-between;
   margin-top: 5%;
+  width: 100%;
 }
 
 .our-mission h1{
   margin-left: 100px;
+  width: 100%;
   text-decoration: none;
   font-weight: 600;
   color: #ffffff;
@@ -303,9 +309,9 @@ body{
   font-family:"Poppins";
 }
 
-.our-mission h1.active1{
+.active1{
   content: "";
-  width: 20%;
+  width: 25%;
   height: 4px;
   border-radius: 2px;
   background: #f1f14a;
@@ -321,6 +327,10 @@ body{
   font-size: larger;
   font-weight: 500;
 
+}
+
+.our-mission-data p b{
+  color: #fff;
 }
 
 .our-mission-data ul li{
@@ -594,7 +604,7 @@ footer .follow i {
   }
 
   .Container2{
-    height: 115rem;
+    height: auto;
   }
 
 }
@@ -628,19 +638,19 @@ footer .follow i {
   }
 
   .Container{
-    height: 800px;
+    height: auto;
   }
 
   .Container1{
-    height: 1150px;
+    height: auto;
   }
 
   .Container2{
-    height: 120rem;
+    height: auto;
   }
 
   .Container3{
-    height: 80rem;
+    height: auto;
   }
 
   #btn{
