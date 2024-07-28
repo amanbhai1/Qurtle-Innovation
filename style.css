@@ -355,6 +355,7 @@ body{
   background-color: #222;
 }
 
+
 .normal {
   font-size: 14px;
   font-weight: 600;
@@ -403,7 +404,7 @@ border-radius: 0px;
 
 .service-1 h1{
   color: #ffffff;
-  font-size: 50px;
+  font-size: 70px;
   margin-bottom: 20px;
   
 }
@@ -1030,7 +1031,7 @@ textarea.input {
   }
 
   .service{
-    height: 730px;
+    height: auto;
   }
 
   .service-1 h2{
@@ -1140,7 +1141,7 @@ textarea.input {
   }
 
   .service{
-    height: 790px;
+    height: auto;
   }
 
   .service-1{
@@ -1152,7 +1153,7 @@ textarea.input {
   }
 
   .service-1 h1{
-    font-size: 10px;
+    font-size: 20px;
   }
 
   .service-data p{
