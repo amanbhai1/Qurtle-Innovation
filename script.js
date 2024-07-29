@@ -167,6 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const fadeInElements1 = document.querySelectorAll('.our-mission-data p b');
     const fadeInElements2= document.querySelectorAll('.our-mission-data p');
     const fadeInElements3 = document.querySelectorAll('.our-mission-data ul li');
+    const fadeInElements4 = document.querySelectorAll('.container');
 
     const options = {
         threshold: 0.1
@@ -176,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Optional: Unobserve if you only want the animation once
+                observer.unobserve(entry.target); 
             }
         });
     }, options);
@@ -186,9 +187,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     fadeInElements1.forEach(element => {
         observer.observe(element);
-    });fadeInElements2.forEach(element => {
+    });
+    fadeInElements2.forEach(element => {
         observer.observe(element);
-    });fadeInElements3.forEach(element => {
+    });
+    fadeInElements3.forEach(element => {
+        observer.observe(element);
+    });
+    fadeInElements4.forEach(element => {
         observer.observe(element);
     });
 });
