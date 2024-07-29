@@ -3,124 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Spartan', sans-serif;
-}
-
-.poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .poppins-extralight {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .poppins-light {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .poppins-semibold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .poppins-extrabold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .poppins-black {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .poppins-thin-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .poppins-extralight-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .poppins-light-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .poppins-regular-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .poppins-medium-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .poppins-semibold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .poppins-bold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .poppins-extrabold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-  }
-  
-  .poppins-black-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  
+    font-family:'Poppins',sans-serif;
+} 
 body{
     background-image: url(/Assets/hero-bg.jpg);
     background-size: 100%;
-    box-shadow: inset 0 0 0 2000px rgba(26, 26, 26, 0.3);
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.55);
     background-repeat: no-repeat;
     width: 100%;
     background-attachment: fixed;
+    font-family: 'Poppins' , sans-serif;
 }
 
 .header{
@@ -154,10 +46,9 @@ body{
 #navbar li a {
     text-decoration: none;
     font-size: 16px;
-    font-weight: 600;
     color: #ffffff;
     transition: 0.3s ease;
-    font-family:"Poppins";
+    font-family:'Poppins',sans-serif;
 }
 
 
@@ -178,27 +69,39 @@ body{
     left: 20px;
 }
 .Welcome-text{
-    padding: 100px 40px;
+    padding: 70px 40px;
     width: 53%;
     height: 500px;
 }
 
 .Welcome-text h1{
-    font-size: 58px;
-    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #ffffff;
+    opacity: 0;
+    transform: translate(20px);
+    animation: fadeIn 3s ease-in forwards;
 }
 
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
 
 .Welcome-text p{
-  font-size: 22px;
+  font-size: 18px;
   text-align: left;
-  color: rgb(23, 23, 23);
+  color: rgb(255, 255, 255);
   text-align: left;
   margin-top: 15px;
   font-weight: 100;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:'Poppins',sans-serif;
+  opacity: 0;
+  transform: translate(20px);
+  animation: fadeIn 3s ease-in forwards;
 }
 
 .Welcome-text b{
@@ -206,8 +109,11 @@ body{
   text-align: left;
   color: rgb(255, 255, 255);
   text-align: left;
-  font-weight: 100;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 150;
+  font-family:'Poppins',sans-serif;
+  opacity: 0;
+  transform: translate(20px);
+  animation: fadeIn 3s ease-in forwards;
 }
 
 .Welcome-text button{
@@ -221,8 +127,11 @@ body{
     cursor: pointer;
     margin-top: 20px;
     font-size: 20px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Poppins',sans-serif;
     font-weight:500px;
+    opacity: 0;
+    transform: translate(20px);
+    animation: fadeIn 3s ease-in forwards;
 }
 
 .Welcome-text button:hover{
@@ -306,7 +215,15 @@ body{
   font-weight: 600;
   color: #ffffff;
   transition: 0.3s ease;
-  font-family:"Poppins";
+  font-family:'Poppins',sans-serif;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.our-mission h1.visible{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .active1{
@@ -325,12 +242,26 @@ body{
   padding-top: 5%;
   margin: 20px 120px;
   font-size: larger;
-  font-weight: 500;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
 
+.our-mission-data p.visible{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .our-mission-data p b{
   color: #fff;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.our-mission-data p b.visible{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .our-mission-data ul li{
@@ -338,7 +269,14 @@ body{
   padding-top: 2%;
   margin: 20px 130px;
   font-size: larger;
-  font-weight: 500;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.our-mission-data ul li.visible{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #mobile {
@@ -379,7 +317,7 @@ body{
   cursor: pointer;
   margin-top: 20px;
   font-size: 20px;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family:'Poppins',sans-serif;
   font-weight:400px;
 }
 
@@ -406,7 +344,7 @@ border-radius: 0px;
   color: #ffffff;
   font-size: 50px;
   margin-bottom: 20px;
-  font-family:sans-serif, "Poopins";
+  font-family:'Poppins',sans-serif;
   
 }
 .service-data{
@@ -1066,6 +1004,10 @@ textarea.input {
   }
 
   .Welcome-text p{
+    font-size: 16px;
+  }
+
+  .Welcome-text b{
     font-size: 19px;
   }
 
@@ -1103,8 +1045,10 @@ textarea.input {
   }
 
   .our-mission-data ul li{
+
     margin-left: 60px;
     margin-right: 60px;
+    font-size: 15px;
   }
 
   .our-mission{
@@ -1120,6 +1064,7 @@ textarea.input {
 
   .our-mission-data p{
     margin:20px 40px 0 40px;
+    font-size: 17px;
   } 
 
   .our-mission-data{
@@ -1133,7 +1078,6 @@ textarea.input {
   .Welcome-text button{
     font-size: 15px;
     margin-top: 20px;
-    font-weight: 500;
     padding: 12px 65px 10px 50px
   }
 
@@ -1154,11 +1098,11 @@ textarea.input {
   }
 
   .service-1 h1{
-    font-size: 20px;
+    font-size: 13px;
   }
 
   .service-data p{
-    font-size: 6px;
+    font-size: 8px;
     margin: 15px;
   }
 

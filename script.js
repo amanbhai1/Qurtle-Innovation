@@ -162,3 +162,33 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const fadeInElements = document.querySelectorAll('.our-mission h1');
+    const fadeInElements1 = document.querySelectorAll('.our-mission-data p b');
+    const fadeInElements2= document.querySelectorAll('.our-mission-data p');
+    const fadeInElements3 = document.querySelectorAll('.our-mission-data ul li');
+
+    const options = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Optional: Unobserve if you only want the animation once
+            }
+        });
+    }, options);
+
+    fadeInElements.forEach(element => {
+        observer.observe(element);
+    });
+    fadeInElements1.forEach(element => {
+        observer.observe(element);
+    });fadeInElements2.forEach(element => {
+        observer.observe(element);
+    });fadeInElements3.forEach(element => {
+        observer.observe(element);
+    });
+});
