@@ -895,6 +895,7 @@ textarea.input {
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 80px 0 0 10px;
     transition: 0.3s ease;
+    z-index: 1000;
 }
 
     #navbar.active {
