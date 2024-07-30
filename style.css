@@ -291,8 +291,14 @@ body{
   background-color: #222;
 }
 
+#service{
+  margin-left: 500px;
+}
+
 .services {
   display: flex;
+  align-self: center;
+  justify-content: center;
   gap: 4rem;
 }
 .service-a {
@@ -343,7 +349,7 @@ border-radius: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px;
+  padding: 40px 30px 40px 30px;
   justify-content: center;
 }
 
@@ -1107,27 +1113,23 @@ textarea.input {
 
   .service{
     height: auto;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 0px;
+  }
+
+  #service{
+    margin-left: 30px;
+    margin-bottom: 40px;
   }
 
   .services{
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     font-size: 14px;
-    margin-top: 40px;
-    text-align: center;
+    padding: 30px;
   }
+
 
   .services span{
     font-size: 11px;
-  }
-
-  .service-1{
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 0px;
   }
 
   .service-1 h2{
@@ -1135,7 +1137,9 @@ textarea.input {
   }
 
   .service-1 h1{
-    font-size: 15px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
   }
 
   .service-data p{
@@ -1146,6 +1150,7 @@ textarea.input {
   .normal {
     padding: 10px 20px;
     font-size: 6px;
+    font-size: 8px;
   }
 
   .footer{
