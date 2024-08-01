@@ -70,7 +70,7 @@ body{
 }
 .Welcome-text{
     padding: 70px 40px;
-    width: 53%;
+    width: 50%;
     height: 500px;
 }
 
@@ -218,7 +218,8 @@ body{
 
 .our-mission{
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: left;
   justify-content: space-between;
   margin-top: 5%;
   width: 100%;
@@ -248,13 +249,12 @@ body{
 
 .active1{
   content: "";
-  width: 40%;
+  width: 15%;
   height: 4px;
   border-radius: 2px;
   background: #f1f14a;
   position: relative;
   bottom: 5px;
-  left: 20px;
 }
 
 .our-mission-data p{
@@ -378,6 +378,7 @@ body{
   gap: 1rem;
 }
 
+
 .services-box{
   display: flex;
   align-items: center;
@@ -404,8 +405,13 @@ body{
   border-radius: 6px;
 }
 
-.service-a span{
+.service-a span a{
   color: rgb(188, 188, 188);
+  text-decoration: none;
+}
+
+.service-a span a:hover{
+  color:#f1f14a;
 }
 
 
@@ -507,24 +513,24 @@ footer .col {
 }
 
 footer img {
-  height: 100px;
+  height: 60px;
   margin-bottom: 30px;
 }
 
 footer h4 {
-  font-size: 18px;
+  font-size: 16px;
   padding-bottom: 20px;
 }
 
 footer p {
-  font-size: 16px;
+  font-size: 14px;
   margin: 0, 0, 8px, 0;
 }
 
 footer a {
   color: #222;
-  font-size: 17px;
-  margin-bottom: 25px;
+  font-size: 14px;
+  margin-bottom: 2px;
   text-decoration: none;
 }
 
@@ -534,7 +540,7 @@ footer .follow {
 
 footer .follow i {
   color: #465b52;
-  padding-right: 4px;
+  padding-right: 9px;
   cursor: pointer;
 }
 
@@ -1087,9 +1093,10 @@ textarea.input {
   }
   .our-mission{
     width: 100%;
+    margin-left: 20px;
   }
   .our-mission h1.active1{
-    width: 40%;
+
   }
 
   .service{
@@ -1213,7 +1220,8 @@ textarea.input {
   }
 
   .our-mission h1.active1{
-    width: 50%;
+    width: 40%;
+    flex-direction: row;
   }
 
   .newbtn{
@@ -1275,7 +1283,7 @@ textarea.input {
   }
 
   .copyright {
-    text-align: start;
+    flex-direction: column;
 }
   
   
