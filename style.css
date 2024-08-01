@@ -345,13 +345,15 @@ body{
 
 #service{
   margin-left: 500px;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 .services {
   display: flex;
-  align-self: center;
-  justify-content: center;
-  gap: 4rem;
+  justify-content: left;
+  margin-left: 100px;
+  gap: 14rem;
 }
 .service-a {
   display: flex;
@@ -1187,6 +1189,7 @@ textarea.input {
 
   .services{
     flex-direction: column;
+    margin-left: 0;
     gap: 1rem;
     font-size: 14px;
     padding: 30px;
