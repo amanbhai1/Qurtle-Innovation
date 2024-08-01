@@ -146,6 +146,15 @@ body{
   padding-bottom: 50px;
 }
 
+.Container-index{
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  background-color: #000;
+}
+
 .Container1{
   width: 100%;
   height: auto;
@@ -219,6 +228,10 @@ body{
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
+.our-mission h1 b{
+  font-size: 35px;
+}
+
 .our-mission h1.visible{
   opacity: 1;
   transform: translateY(0);
@@ -243,6 +256,45 @@ body{
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.our-cap-data p{
+  color: #b8b7b7;
+  margin: 20px 120px;
+  margin-bottom: 50px;
+  font-size: 16px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.our-cap-data p.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cap{
+  width: 30%;
+  margin-top: 50px;
+}
+
+.cap-data{
+  width: 70%;
+  margin-top: 50px;
+}
+
+.our-cap-data p b{
+  color: #ffffff;
+  padding-top: 5%;
+  font-size: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.our-cap-data p b.visible{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .our-mission-data p.visible{
@@ -1051,6 +1103,19 @@ textarea.input {
 
   .Container{
     height: auto;
+  }
+
+  .Container-index{
+    flex-direction: column;
+    align-items:start;
+  }
+
+  .cap-data{
+    width: 100%;
+  }
+
+  .our-cap-data p{
+    margin: 20px 40px ;
   }
 
   .Container1{

@@ -168,6 +168,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const fadeInElements2= document.querySelectorAll('.our-mission-data p');
     const fadeInElements3 = document.querySelectorAll('.our-mission-data ul li');
     const fadeInElements4 = document.querySelectorAll('.container');
+    const fadeInElements5= document.querySelectorAll('.our-cap-data p b');
+    const fadeInElements6= document.querySelectorAll('.our-cap-data p');
+
 
     const options = {
         threshold: 0.1
@@ -195,6 +198,12 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
     fadeInElements4.forEach(element => {
+        observer.observe(element);
+    });
+    fadeInElements5.forEach(element => {
+        observer.observe(element);
+    });
+    fadeInElements6.forEach(element => {
         observer.observe(element);
     });
 });
