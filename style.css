@@ -155,6 +155,15 @@ body{
   background-color: #000;
 }
 
+.Container-index-1{
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  background-color: #131313;
+}
+
 .Container1{
   width: 100%;
   height: auto;
@@ -239,7 +248,7 @@ body{
 
 .active1{
   content: "";
-  width: 25%;
+  width: 40%;
   height: 4px;
   border-radius: 2px;
   background: #f1f14a;
@@ -274,7 +283,7 @@ body{
 }
 
 .cap{
-  width: 30%;
+  width: 40%;
   margin-top: 50px;
 }
 
@@ -340,7 +349,7 @@ body{
 
 .service{
   height: auto;
-  background-color: #222;
+  background-color: #131313;
 }
 
 .service-1 h3{
@@ -433,7 +442,7 @@ border-radius: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 30px 40px 30px;
+  padding: 120px 30px 40px 0px;
   justify-content: center;
 }
 

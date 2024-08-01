@@ -14,6 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('about');
+    button.addEventListener('click', function() {
+        window.location.href = 'about.html';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
     const button = document.getElementById('service');
     button.addEventListener('click', function() {
         window.location.href = 'services.html';
