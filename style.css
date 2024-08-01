@@ -114,9 +114,9 @@ body{
   animation: fadeIn 3s ease-in forwards;
 }
 
-.Welcome-text button{
+.newbtn{
     background-color: transparent;
-    color: #ffffff;
+    color: #f1f14a;
     border-radius: 10px;
     border-color: #f1f14a;
     border-style:solid;
@@ -126,13 +126,13 @@ body{
     margin-top: 20px;
     font-size: 20px;
     font-family:'Poppins',sans-serif;
-    font-weight:500px;
+    font-weight:800;
     opacity: 0;
     transform: translate(20px);
     animation: fadeIn 3s ease-in forwards;
 }
 
-.Welcome-text button:hover{
+.newbtn:hover{
   border-color: white;
   margin-left: 10px;
   border-radius: 0px;
@@ -161,7 +161,7 @@ body{
   display: flex;
   align-items: top;
   justify-content: center;
-  background-color: #131313;
+  background-color: #222;
 }
 
 .Container1{
@@ -349,25 +349,29 @@ body{
 
 .service{
   height: auto;
-  background-color: #131313;
+  background-color: #222;
+  padding-bottom: 50px;
 }
 
 .service-1 h3{
   color: white;
 }
 
-#service{
-  margin-top: 40px;
-  margin-bottom: 50px;
-}
 
 .services {
   display: flex;
-  justify-content: left;
-  margin-left: 100px;
+  margin-top: 40px;
+  justify-content: center;
   gap: 14rem;
   padding-bottom: 70px;
 }
+
+.service-contact{
+  height: auto;
+  background-color: #222;
+  padding-bottom: 50px;
+}
+
 .service-a {
   display: flex;
   flex-direction: column;
@@ -442,7 +446,7 @@ border-radius: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 30px 40px 0px;
+  padding-top: 50px;
   justify-content: center;
 }
 
@@ -1067,7 +1071,7 @@ textarea.input {
     width: 85%;
   }
 
-  .Welcome-text button{
+  .newbtn{
     margin-top: 50px;
   }
 
@@ -1151,12 +1155,17 @@ textarea.input {
     align-items:start;
   }
 
+  .Container-index-1{
+    flex-direction: column;
+    align-items:start;
+  }
+
   .cap-data{
     width: 100%;
   }
 
   .our-cap-data p{
-    margin: 20px 40px ;
+    margin: 60px 40px ;
   }
 
   .Container1{
@@ -1207,7 +1216,7 @@ textarea.input {
     width: 50%;
   }
 
-  .Welcome-text button{
+  .newbtn{
     font-size: 15px;
     margin-top: 20px;
     padding: 12px 65px 10px 50px
@@ -1238,6 +1247,7 @@ textarea.input {
   .services span{
     font-size: 11px;
   }
+  
 
   .service-1 h2{
     font-size: 19px;
