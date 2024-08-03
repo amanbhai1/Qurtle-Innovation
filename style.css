@@ -1095,8 +1095,9 @@ textarea.input {
     width: 100%;
     margin-left: 20px;
   }
-  .our-mission h1.active1{
 
+  .services{
+    gap: 2rem;
   }
 
   .service{
