@@ -5,14 +5,23 @@
     box-sizing: border-box;
     font-family:'Poppins',sans-serif;
 } 
+
+
 body{
     background-image: url(/Assets/hero-bg.jpg);
-    background-size: 100%;
+    background-size: cover;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.55);
     background-repeat: no-repeat;
-    width: 100%;
     background-attachment: fixed;
     font-family: 'Poppins' , sans-serif;
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+}
+
+.body-1{
+  max-width: 1260px;
+  margin: 0 auto;
 }
 
 .header{
@@ -33,6 +42,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 
@@ -50,8 +60,6 @@ body{
     transition: 0.3s ease;
     font-family:'Poppins',sans-serif;
 }
-
-
 
 #navbar li a:hover,
 #navbar li a.active {
@@ -147,13 +155,14 @@ body{
 }
 
 .Container-index{
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1260px;
   padding: 20px 0;
   display: flex;
-  align-items: top;
   justify-content: center;
   background-color: #000;
 }
+
 
 .Container-index-1{
   margin: 0 auto;
