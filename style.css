@@ -286,9 +286,28 @@ body{
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
+.image-data{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .our-cap-data p.visible{
   opacity: 1;
   transform: translateY(0);
+}
+
+.cap img{
+  margin-left: -340px ;
+  transition: 0.3s ease-in;
+}
+
+.img-data{
+  margin-left: -340px ;
+}
+
+.cap img:hover{
+  margin-left: -330px;
 }
 
 .cap{
@@ -299,6 +318,35 @@ body{
 .cap-data{
   width: 70%;
   margin-top: 50px;
+}
+
+.our-cap-data h3,h1{
+  color: #fff;
+}
+
+.img-data h3,h1{
+  color: #fff;
+}
+
+.our-cap-data h6{
+  margin-top: 40px;
+  color: #cac8c8;
+  width: 300px;
+}
+
+.img-data h6{
+  margin-top: 40px;
+  color: #cac8c8;
+  width: 300px;
+}
+
+.second-img{
+  margin-right: 120px;
+  transition: 0.3s ease-in;
+}
+
+.second-img:hover{
+  margin-right: 110px;
 }
 
 .our-cap-data p b{
@@ -1195,6 +1243,22 @@ textarea.input {
 
   .Container3{
     height: auto;
+  }
+
+  .image-data{
+    flex-direction: column;
+  }
+
+  .our-cap-data{
+    margin-left: 60px;
+  }
+
+  .img-data{
+    margin: 0;
+  }
+
+  .cap img{
+    margin-left: -100px;
   }
 
   .btn{
