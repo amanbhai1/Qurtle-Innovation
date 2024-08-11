@@ -302,10 +302,6 @@ body{
   transition: 0.3s ease-in;
 }
 
-.img-data{
-  margin-left: -340px ;
-}
-
 .cap img:hover{
   margin-left: -330px;
 }
@@ -324,29 +320,10 @@ body{
   color: #fff;
 }
 
-.img-data h3,h1{
-  color: #fff;
-}
-
 .our-cap-data h6{
   margin-top: 40px;
   color: #cac8c8;
   width: 300px;
-}
-
-.img-data h6{
-  margin-top: 40px;
-  color: #cac8c8;
-  width: 300px;
-}
-
-.second-img{
-  margin-right: 120px;
-  transition: 0.3s ease-in;
-}
-
-.second-img:hover{
-  margin-right: 110px;
 }
 
 .our-cap-data p b{
@@ -484,6 +461,62 @@ body{
   outline: none;
   transition: 0.2s;
 }
+
+.profile {
+  display: flex;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile div{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-right: 40px;
+}
+
+
+
+.profile div button{
+  margin-left: 0;
+}
+
+.profile div button:hover{
+  margin-left: 10px;
+}
+
+.profile div img {
+  width: 500px;
+  border-radius: 8px;
+  margin-left: 40px;
+  transition: 0.3s ease-in;
+}
+
+.profile div img:hover{
+  margin-left: 30px;
+}
+
+
+.profile div h2 {
+  font-size: 40px;
+  color: white;
+  margin: 10px 0;
+}
+
+.role {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: #d3d3d3;
+  margin-bottom: 70px;
+}
+
 .btn{
   background-color: transparent;
   color: #ffffff;
@@ -1006,6 +1039,34 @@ textarea.input {
     width: 23px;
   }
 
+  .profile{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile div{
+    width: 100%;
+    align-items: center;
+   justify-content: center; 
+  }
+
+  .role{
+    margin-top: 20px;
+  }
+
+  .description{
+    margin-left: 40px;
+  }
+
+  .profile img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile h2 {
+    font-size: 24px;
+    margin: 10px 0;
+
   .input {
     padding: 0.45rem 1.2rem;
   }
@@ -1243,22 +1304,6 @@ textarea.input {
 
   .Container3{
     height: auto;
-  }
-
-  .image-data{
-    flex-direction: column;
-  }
-
-  .our-cap-data{
-    margin-left: 60px;
-  }
-
-  .img-data{
-    margin: 0;
-  }
-
-  .cap img{
-    margin-left: -100px;
   }
 
   .btn{
