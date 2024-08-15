@@ -221,3 +221,32 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 });
+
+function toggleImage() {
+    var img = document.getElementById('profile-image');
+    var img1 = document.getElementById('profile-image1');
+    var img2 = document.getElementById('profile-image2');
+
+    if (window.innerWidth <= 768) {
+        img.style.display = 'block';
+    } else {
+        img.style.display = 'none';
+    }
+
+    if (window.innerWidth <= 768) {
+        img1.style.display = 'block';
+    } else {
+        img1.style.display = 'none';
+    }
+
+    if (window.innerWidth <= 768) {
+        img2.style.display = 'block';
+    } else {
+        img2.style.display = 'none';
+    }
+}
+
+window.onload = toggleImage;
+window.onresize = toggleImage;
+
+
