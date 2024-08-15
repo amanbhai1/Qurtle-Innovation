@@ -87,9 +87,6 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #ffffff;
-    opacity: 0;
-    transform: translate(20px);
-    animation: fadeIn 3s ease-in forwards;
 }
 
 @keyframes fadeIn {
@@ -106,9 +103,7 @@ body{
   margin-top: 15px;
   font-weight: 100;
   font-family:'Poppins',sans-serif;
-  opacity: 0;
-  transform: translate(20px);
-  animation: fadeIn 3s ease-in forwards;
+
 }
 
 .Welcome-text b{
@@ -117,9 +112,7 @@ body{
   color: rgb(255, 255, 255);
   font-weight: 150;
   font-family:'Poppins',sans-serif;
-  opacity: 0;
-  transform: translate(20px);
-  animation: fadeIn 3s ease-in forwards;
+
 }
 
 .newbtn{
