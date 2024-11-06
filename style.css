@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Poppins',sans-serif;
-} 
+}
 
 
 body{
@@ -131,6 +131,22 @@ body{
     opacity: 0;
     transform: translate(20px);
     animation: fadeIn 3s ease-in forwards;
+}
+
+#wel{
+  width: 90%;
+  margin-left:30px
+}
+
+#wel h1{
+  color: white;
+  font-size:30px;
+  margin-bottom:20px
+}
+
+#wel h2{
+  font-size: 50px;
+  color:white
 }
 
 .newbtn:hover{
@@ -714,6 +730,127 @@ footer .follow i {
   margin-left: 12px;
 }
 
+.team-member {
+  display: flex;
+  max-width: 1100px;
+  background-color: #0e0e0e;
+  color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 40px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.member-image {
+  width: 50%;
+  overflow: hidden;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.member-image img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+.member-info {
+  width: 50%;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0e0e0e;
+}
+
+.member-info h4 {
+  font-size: 1.2rem;
+  color: #888888;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 15px;
+}
+
+.member-info h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.member-info p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.team-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  background-color: #0e0e0e;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  margin-bottom: auto;
+}
+
+.team-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+  transition: 0.3s ease-out;
+}
+
+.team-grid img:hover {
+  margin-top: 10px;
+}
+
+.team-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  background-color: #0e0e0e;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.team-info h3 {
+  font-size: 0.9rem;
+  color: #888888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.team-info h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.team-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 
@@ -1104,9 +1241,9 @@ textarea.input {
   }
 
   .profile div{
-    width: 100%;
-    align-items: center;
-   justify-content: center; 
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   }
 
   .role{
@@ -1294,6 +1431,93 @@ textarea.input {
 
   .Container2{
     height: auto;
+  }
+
+  .team-member {
+    flex-direction: column;
+    margin: 20px;
+    max-width: 100%;
+  }
+
+  .member-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .member-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .member-info {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .member-info h4 {
+    font-size: 1rem;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .member-info h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+
+  .member-info p {
+    font-size: 1rem;
+    color: #cccccc;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .team-section {
+    display: block;
+    padding: 20px;
+  }
+
+  .team-grid {
+    display: block;
+  }
+
+  .team-grid img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    transition: 0.3s ease-out;
+  }
+
+  .team-info {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .team-info h1 {
+    font-size: 2rem;
+  }
+
+  .team-info h3 {
+    font-size: 1rem;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .team-info p {
+    font-size: 0.95rem;
+    color: #cccccc;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
@@ -1493,7 +1717,22 @@ textarea.input {
   .copyright {
     flex-direction: column;
 }
-  
-  
+
+  #wel{
+    margin-left: 0px;
+  }
+
+  #wel h1{
+    font-size: 20px;
+  }
+
+  #wel h2{
+    font-size: 30px;
+  }
+
+  #wel div .active1{
+    margin-left: -20px;
+  }
+
 }
   
