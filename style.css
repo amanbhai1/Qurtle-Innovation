@@ -851,6 +851,99 @@ footer .follow i {
   max-width: 400px;
 }
 
+.container {
+  display: flex;
+  gap: 15rem; /* Gap between content and progress-bars */
+}
+
+.content {
+  max-width: 300px;
+}
+
+h2 {
+  font-size: 2.2em; /* Reduced size */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  position: relative;
+  color: #fff;
+}
+
+
+p {
+  font-size: 0.9rem; /* Slightly smaller text */
+  color: #ccc; /* Lighter text color */
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.view-projects {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #f1f14a; /* Green button background */
+  color: #111;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border: 2px solid #f1f14a;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.view-projects:hover {
+  background-color: transparent;
+  color: #f1f14a; /* Hover effect */
+}
+
+.progress-bars {
+  width: 100%;
+  max-width: 300px; /* Max width for alignment */
+}
+
+.progress-bar {
+  margin-bottom: 1.5rem; /* Margin between each progress bar */
+}
+
+.progress-bar span {
+  display: block;
+  font-weight: bold;
+  font-size: 0.85rem; /* Reduced font size */
+  color: #ccc;
+  margin-bottom: 0.2rem;
+}
+
+.progress {
+  width: 100%;
+  height: 6px; /* Reduced height */
+  background-color: #333; /* Dark background for empty bar */
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  background-color: #f1f14a; /* Green filled portion */
+  height: 100%;
+  text-align: right;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #111;
+  padding: 0.1rem 0.3rem; /* Reduced padding */
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+}
+
+/* Specific width for each skill */
+.progress-bar:nth-child(1) .progress-fill { width: 90%; }
+.progress-bar:nth-child(2) .progress-fill { width: 85%; }
+.progress-bar:nth-child(3) .progress-fill { width: 80%; }
+.progress-bar:nth-child(4) .progress-fill { width: 75%; }
+.progress-bar:nth-child(5) .progress-fill { width: 88%; }
+.progress-bar:nth-child(6) .progress-fill { width: 82%; }
+.progress-bar:nth-child(7) .progress-fill { width: 77%; }
+.progress-bar:nth-child(8) .progress-fill { width: 83%; }
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 
@@ -1520,6 +1613,43 @@ textarea.input {
     margin-right: auto;
   }
 
+  .content{
+    margin-left: -80px;
+  }
+
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    gap: 2rem; /* Smaller gap */
+  }
+
+  h2 {
+    font-size: 1.6em; /* Further reduce heading size */
+  }
+
+  .view-projects {
+    padding: 0.5rem 1rem; /* Adjust button padding */
+    font-size: 0.85rem; /* Reduce button font size */
+  }
+
+  .progress-bars {
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  .progress {
+    height: 5px; /* Reduce height of progress bar */
+  }
+
+  .progress-bar span {
+    font-size: 0.8rem; /* Smaller font size for progress labels */
+  }
+
+  .progress-fill {
+    font-size: 0.7rem; /* Reduce font size inside progress bar */
+  }
+
+  
+
 }
 
 
@@ -1732,6 +1862,19 @@ textarea.input {
 
   #wel div .active1{
     margin-left: -20px;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .view-projects {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
   }
 
 }

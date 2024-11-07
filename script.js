@@ -250,3 +250,14 @@ window.onload = toggleImage;
 window.onresize = toggleImage;
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const progressFills = document.querySelectorAll(".progress-fill");
+
+    progressFills.forEach(fill => {
+        const width = fill.style.width;
+        fill.style.width = "0";
+        setTimeout(() => {
+            fill.style.width = width;
+        }, 100);
+    });
+});
