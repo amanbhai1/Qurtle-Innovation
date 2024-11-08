@@ -944,6 +944,65 @@ p {
 .progress-bar:nth-child(7) .progress-fill { width: 77%; }
 .progress-bar:nth-child(8) .progress-fill { width: 83%; }
 
+.image-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+  background-color: #181818; /* Dark background for contrast */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Row and column structure */
+.row {
+  display: flex;
+  width: 100%;
+  gap: 70px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  max-width: calc(50% - 20px); /* 2 images per row */
+  min-width: 220px; /* Minimum size for responsiveness */
+  margin-bottom: 20px;
+}
+
+/* Image styling */
+.image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out; /* Smooth transition */
+  position: relative; /* Required for positioning */
+}
+
+/* Hover effects */
+.image:hover {
+  transform: translateY(-10px); /* Move the image 10px up */
+  margin-bottom: 30px; /* Increase the bottom margin for spacing */
+}
+
+
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  .col {
+      max-width: calc(50% - 10px); /* 2 images per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .col {
+      max-width: 100%; /* 1 image per row on very small screens */
+  }
+}
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 
@@ -1648,7 +1707,10 @@ textarea.input {
     font-size: 0.7rem; /* Reduce font size inside progress bar */
   }
 
-  
+  .col {
+    max-width: calc(50% - 10px); /* 2 images per row */
+    margin-bottom: 15px;
+}
 
 }
 
@@ -1876,6 +1938,22 @@ textarea.input {
     padding: 0.4rem 0.8rem;
     font-size: 0.8rem;
   }
+
+  .image-container{
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+
+  .col {
+    max-width: 90%; /* 1 image per row */
+    margin-bottom: 10px;
+    margin-top: -50px;
+
+}
+.image {
+    margin-bottom: 10px; /* Reduced margin for better spacing on mobile */
+}
 
 }
   
