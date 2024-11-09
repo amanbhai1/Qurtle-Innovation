@@ -99,30 +99,32 @@
                 <span class="circle one"></span>
                 <span class="circle two"></span>
       
-                <form action="index.html" autocomplete="off">
+                <form id="contactform" autocomplete="off">
                   <h3 class="title">Contact us</h3>
                   <div class="input-container">
-                    <input type="text" name="name" class="input" placeholder="Name"/>
+                    <input type="text" name="name" id="Name" class="input" placeholder="Name" required />
                     <label for=""></label>
                     <span>Username</span>
                   </div>
                   <div class="input-container">
-                    <input type="email" name="email" class="input" placeholder="Email"/>
+                    <input type="email" name="email" class="input" placeholder="Email" required />
                     <label for=""></label>
                     <span>Email</span>
                   </div>
                   <div class="input-container">
-                    <input type="tel" name="phone" class="input" placeholder="Mobile Number"/>
+                    <input type="tel" name="phone" class="input" placeholder="Mobile Number" required />
                     <label for=""></label>
                     <span>Phone</span>
                   </div>
                   <div class="input-container textarea">
-                    <textarea name="message" class="input" placeholder="Message"></textarea>
+                    <textarea name="message" class="input" placeholder="Message" required></textarea>
                     <label for=""></label>
                     <span>Message</span>
                   </div>
-                  <input type="submit" value="Send" class="btn1" />
+                  <input type="submit" value="Send Message" class="btn1" />
                 </form>
+                <div id="message-container"></div>
+                
               </div>
             </div>
           </div>

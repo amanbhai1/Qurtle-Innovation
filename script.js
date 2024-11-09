@@ -261,3 +261,64 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 100);
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contactform');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission (to prevent page reload)
+  
+        // Get form data
+        const formData = new FormData(form);
+        const formObject = {};
+        
+        // Convert FormData to a plain object
+        formData.forEach((value, key) => {
+            formObject[key] = value;
+        });
+
+        // Send form data as JSON
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'http://127.0.0.1:5000/contact', true); // Ensure the URL is correct
+
+        // Set the request header for JSON
+        xhr.setRequestHeader('Content-Type', 'application/json');
+
+        // Handle response
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                showSuccessMessage("Your message has been sent successfully! We will get back to you soon.");
+            } else {
+                showErrorMessage("Sorry, there was an issue with your submission. Please try again later.");
+            }
+        };
+
+        // Handle errors
+        xhr.onerror = function () {
+            showErrorMessage("There was a problem with the request. Please try again later.");
+        };
+
+        // Send the form data as JSON
+        xhr.send(JSON.stringify(formObject)); // Send JSON object
+    });
+
+    // Function to show success message
+    function showSuccessMessage(message) {
+        const messageContainer = document.createElement('div');
+        messageContainer.classList.add('message');
+        messageContainer.classList.add('success');
+        messageContainer.innerHTML = message;
+        document.getElementById('message-container').appendChild(messageContainer);
+        setTimeout(() => messageContainer.remove(), 5000);
+    }
+
+    // Function to show error message
+    function showErrorMessage(message) {
+        const messageContainer = document.createElement('div');
+        messageContainer.classList.add('message');
+        messageContainer.classList.add('error');
+        messageContainer.innerHTML = message;
+        document.getElementById('message-container').appendChild(messageContainer);
+        setTimeout(() => messageContainer.remove(), 5000);
+    }
+});
