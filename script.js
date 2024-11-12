@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Send form data as JSON
         const xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://qurtle-innovation.vercel.app/contact', true); // Added 'https://' to the URL
+        xhr.open('POST', '/contact', true); // Added 'https://' to the URL
 
         // Set the request header for JSON
         xhr.setRequestHeader('Content-Type', 'application/json');
