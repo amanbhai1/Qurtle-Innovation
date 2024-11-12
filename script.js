@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Send form data as JSON
         const xhr = new XMLHttpRequest();
-        xhr.open('POST', '/contact', true); // Added 'https://' to the URL
+        xhr.open('POST', 'qurtle-innovation.vercel.app/contact', true); // Ensure the URL is correct
 
         // Set the request header for JSON
         xhr.setRequestHeader('Content-Type', 'application/json');
@@ -322,4 +322,3 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => messageContainer.remove(), 5000);
     }
 });
-
