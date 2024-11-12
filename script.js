@@ -299,7 +299,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         // Send the form data as JSON
-        xhr.send(JSON.stringify(formObject)); // Send JSON object
+        xhr.open('POST', 'https://qurtle-innovation.vercel.app/contact.html', true); // Send JSON object
     });
 
     // Function to show success message
