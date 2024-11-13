@@ -16,6 +16,10 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
+// app.use(cors({
+//     origin: 'https://qurtle-innovations.onrender.com' // Replace this with your frontend URL
+// }));
+
 // MongoDB connection
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('Connected to MongoDB'))
